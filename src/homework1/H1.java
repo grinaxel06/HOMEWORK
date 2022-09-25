@@ -1,6 +1,8 @@
+package homework1;
+
 import java.util.Scanner;
 
-public class Main {
+public class H1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
@@ -11,13 +13,8 @@ public class Main {
         num = num / 10;
         sum += num % 10;
         num = num / 10;
-        sum += num ;
-        System.out.println( sum + " " + b  );
-
-
-
-
-
+        sum += num;
+        System.out.println(sum + " " + b);
 
     }
 }
