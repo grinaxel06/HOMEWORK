@@ -7,7 +7,7 @@ public class H6 {
         Scanner in = new Scanner(System.in);
         float x = in.nextFloat();
         float y = in.nextFloat();
-        if (y <= 2 && x >= 0  && y >= x ){
+        if (y <= - x*x && (y >= 0 || y >= x )){
             System.out.println("YES");
         }
         else{
