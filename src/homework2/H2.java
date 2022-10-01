@@ -20,6 +20,9 @@ public class H2 {
                    if (w%70==0){
                        c+=(w/70);
                    }
+                   if ( c > b/10){
+                       c= c- (c-b/10);
+                   }
                }
         System.out.println("Кол-во кроликов"+ b );
         System.out.println("Кол-во волков"+ c );
