@@ -10,12 +10,12 @@ public class H1 {
                 int c=0;
                 int b = 1;
                 while (n>0){
+                    n /=10;
                    if ( n%10 == x){
-                       n /= 10;
+                     continue;
                    }
                 c += (n%10)*b;
                 b *= 10;
-                n /=10;
 
                 }
         System.out.println(c);
