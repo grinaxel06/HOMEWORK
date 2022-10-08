@@ -8,11 +8,6 @@ public class MyArrays {
         int N = in.nextInt();
         int arr[] = M;
         int c = 0;
-
-
-        for (int i =0; i<arr.length-1;i++){
-            arr[i]=in.nextInt();
-        }
         int min = arr[0];
         for (int i = 0;i<arr.length-1;i++){
             if(arr[i]<min){
@@ -21,12 +16,15 @@ public class MyArrays {
 
             }
         }
+
         for (int i =c ;i>0;i--){
             arr[i]=arr[i-1];
 
 
         }
+
         arr[0]=min;
+
         return arr;
 
 
@@ -36,7 +34,7 @@ public class MyArrays {
         double sum=0;
         double cot = 0;
         int M[] = new int[N];
-        for(int i =0; i< N;i++){
+        for(int i =0; i< M.length-1;i++){
             M[i]= in.nextInt();
             if (M[i]>0 && M[i]/1000>0 && M[i]/1000<10){
                 sum+=M[i];
@@ -58,7 +56,7 @@ public class MyArrays {
         Scanner in = new Scanner(System.in);
         int N =in.nextInt();
         int M[]= new int[N];
-        for(int i = 0; N>i;i++){
+        for(int i = 0; M.length>i;i++){
             M[i]= in.nextInt();
         }
 
