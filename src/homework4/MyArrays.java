@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class MyArrays {
     public static int[] MinToBegin (int[] M){
-        Scanner in = new Scanner(System.in);
-        int N = in.nextInt();
         int arr[] = M;
         int c = 0;
         int min = arr[0];
@@ -55,16 +53,26 @@ public class MyArrays {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int N =in.nextInt();
-        int M[]= new int[N];
-        for(int i = 0; M.length>i;i++){
-            M[i]= in.nextInt();
-        }
+
 
         System.out.println(avgOf4Digit(N));
-        System.out.println(MinToBegin(M));
 
 
     }
 
+
+}
+class main{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int N =in.nextInt();
+        int M[]= new int[N];
+        for(int i = 0; M.length-1>i;i++){
+            M[i]= in.nextInt();
+        }
+        MyArrays arr = new MyArrays();
+        System.out.println(arr.MinToBegin(M));
+
+    }
 
 }
