@@ -1,6 +1,5 @@
 package homework4;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class H2 {
@@ -33,6 +32,12 @@ public class H2 {
             }
 
         }
-        System.out.println(Arrays.deepToString(A));
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m;j++)
+                System.out.print(A[i][j]+" " + "\t");
+            System.out.println();
+        }
+
     }
 }
+
