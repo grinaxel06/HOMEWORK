@@ -1,6 +1,5 @@
-package homework4;
+package homework5;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class H1 {
